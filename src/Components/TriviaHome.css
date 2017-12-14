@@ -1,0 +1,39 @@
+@keyframes streamer {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+.container {
+  max-width: 1200px; }
+
+.title-container {
+  background-color: #32393d;
+  position: relative;
+  text-align: center;
+  z-index: -2; }
+
+.title {
+  display: inline-block;
+  font-size: 4em;
+  margin: 0;
+  padding: 0 20px;
+  text-shadow: 2px 2px 5px #3e3e3e;
+  z-index: 1; }
+
+.title-streamer {
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  z-index: -1;
+  background: linear-gradient(270deg, #1fc868, #f8de41, #f42731, #f452af, #8d44b6);
+  background-size: 200% 200%;
+  animation: streamer 20s ease infinite;
+  height: 10px;
+  width: 100%; }
+
+.main-content {
+  background-color: #2d2d2d;
+  height: 100vh; }
